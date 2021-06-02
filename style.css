@@ -1,0 +1,59 @@
+.container {
+  max-width: 30%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.progress {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+.cards .alert {
+  border: 1px solid #bfbfbf;
+  width: 48%;
+  height: 400px;
+  font-size: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cards .alert.success {
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+}
+.cards .alert.danger {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+}
+.cards .alert:active {
+  background: #bfbfbf;
+}
+#glass {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -10;
+}
+#glass.active {
+  z-index: 99;
+}
+#level {
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+  left: 20px;
+}
